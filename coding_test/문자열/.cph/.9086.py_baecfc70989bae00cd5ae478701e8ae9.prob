@@ -1,0 +1,1 @@
+{"name":"Local: 9086","url":"/Users/jochaeyeon/Downloads/codingtest/coding-test/coding_test/문자열/9086.py","tests":[{"id":1731783323761,"input":"3\nACDKJFOWIEGHE\nO\nAB","output":"AE\nOO\nAB"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/jochaeyeon/Downloads/codingtest/coding-test/coding_test/문자열/9086.py","group":"local","local":true}
