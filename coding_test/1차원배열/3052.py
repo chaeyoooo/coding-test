@@ -6,6 +6,7 @@ for i in range(1,11):
    L.add(a)
 print(len(L))
 
+# 집합은 중복을 허용하지 않는다. 따라서 중복된 값은 제거된다.
 
 # L = []
 # for i in range(1,11):
