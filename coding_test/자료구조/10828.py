@@ -1,6 +1,8 @@
-stack = []
+import sys
+input = sys.stdin.readline
 
-N = int(input())
+N = int(input())    
+stack = []  
 
 for _ in range(N):
     command = input().split()
