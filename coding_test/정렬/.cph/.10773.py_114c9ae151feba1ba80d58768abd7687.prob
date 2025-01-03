@@ -1,0 +1,1 @@
+{"name":"Local: 10773","url":"/Users/jochaeyeon/Downloads/codingtest/coding-test/coding_test/정렬/10773.py","tests":[{"id":1735921448377,"input":"10\n1\n3\n5\n4\n0\n0\n7\n0\n0\n6","output":"7"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/jochaeyeon/Downloads/codingtest/coding-test/coding_test/정렬/10773.py","group":"local","local":true}
