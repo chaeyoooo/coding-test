@@ -1,0 +1,1 @@
+{"name":"Local: 2178","url":"/Users/jochaeyeon/Downloads/codingtest/coding-test/coding_test/그래프/2178.py","tests":[{"id":1736214466130,"input":"4 6\n101111\n101010\n101011\n111011","output":"15"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/jochaeyeon/Downloads/codingtest/coding-test/coding_test/그래프/2178.py","group":"local","local":true}
