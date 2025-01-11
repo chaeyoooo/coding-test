@@ -1,0 +1,1 @@
+{"name":"Local: 1003","url":"/Users/jochaeyeon/Downloads/codingtest/coding-test/coding_test/다이나믹프로그래밍/1003.py","tests":[{"id":1736560351916,"input":"3\n0\n1\n3","output":"1 0\n0 1\n1 2\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/jochaeyeon/Downloads/codingtest/coding-test/coding_test/다이나믹프로그래밍/1003.py","group":"local","local":true}
