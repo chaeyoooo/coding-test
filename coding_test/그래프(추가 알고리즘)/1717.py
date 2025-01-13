@@ -1,3 +1,7 @@
+import sys
+sys.setrecursionlimit(1000000) #이거 없으면 안됨 재귀 할때 넣어주기 
+input = sys.stdin.readline
+
 def find_parent(parent, x):
     if parent[x] != x:
         parent[x] = find_parent(parent, parent[x])
@@ -12,10 +16,7 @@ def union_parent(parent, a, b):
         parent[a] = b
 
 n,m = map(int, input().split())
-parent = [0] * (n+1)
-
-for i in range(n+1):
-    parent[i] = i
+parent = [i for i in range(n+1)]
 
 for i in range(m):
     oper , a , b = map(int, input().split())
@@ -23,6 +24,6 @@ for i in range(m):
         union_parent(parent, a, b)
     elif oper == 1:
         if find_parent(parent, a) == find_parent(parent, b):
-            print("YES")
+            print("YES" or "yes")
         else:
-            print("NO")
+            print("NO" or "no")
