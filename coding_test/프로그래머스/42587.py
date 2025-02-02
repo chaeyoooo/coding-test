@@ -16,3 +16,26 @@ def solution(priorities, location):
             count +=1
             if current[0] == location:
                 return count
+            
+
+# any x , for문으로
+def solution(priorities, location):
+    from collections import deque
+    queue = deque(enumerate(priorities))
+    count = 0
+    
+    while queue:
+        current = queue.popleft()
+        high = False 
+        
+        for q in queue:
+            if current[1] < q[1]: 
+                high = True
+                break 
+        
+        if high:  
+            queue.append(current)  
+        else:
+            count += 1 
+            if current[0] == location:  
+                return count

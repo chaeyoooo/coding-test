@@ -13,6 +13,11 @@ while stack:
 
 print("<" + ", ".join(map(str, result)) + ">")
 
+
+#시간 초과 해결 : deque 사용
+# pop(0)은 O(n)이므로 시간 초과가 발생한다.
+# deque의 popleft()는 O(1)이므로 시간 초과가 발생하지 않는다.
+
 from collections import deque
 
 N, K = map(int, input().split())
