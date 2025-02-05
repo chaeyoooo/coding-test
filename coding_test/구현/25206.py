@@ -26,3 +26,4 @@ for _ in range(20):
     answer = totalscore/total
 
 print(f"{answer:.6f}")
+    
