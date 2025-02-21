@@ -4,5 +4,4 @@ def solution(nums):
     range_nums = set(nums)
     if len(range_nums) > len(nums) // 2:
         return len(nums) //2
-    else:
-        return len(range_nums)
+    return len(range_nums)
