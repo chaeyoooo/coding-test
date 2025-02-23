@@ -13,7 +13,7 @@ def solution(k, m, score):
     score.sort(reverse=True)  
 
     for i in range(0, len(score), m): 
-        if i + m <= len(score):  
+        if i + m <= len(score):  #i에서 m개를 뽑아도 리스트 안에 남아있는 경우
             answer += min(score[i:i+m]) * m  
 
     return answer
