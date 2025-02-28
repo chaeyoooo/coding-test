@@ -7,6 +7,7 @@ def solution(numbers, hand):
             [7,8,9,],
             ["*" , 0 , "#"]]
     a = {array[row][col]: (row, col) for row in range(len(array)) for col in range(len(array[row]))}
+    print(a)
     
     def distance(p1, p2):
         return abs(p1[0] - p2[0]) + abs(p1[1] - p2[1])
