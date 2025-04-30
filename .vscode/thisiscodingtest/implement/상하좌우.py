@@ -28,6 +28,7 @@
 
 # print(map)
 
+#상하좌우
 N = int(input()) # 5
 M = input().split() # L R U D D
 
