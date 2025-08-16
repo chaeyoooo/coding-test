@@ -1,37 +1,34 @@
 
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Scanner;
+import java.util.StringTokenizer;
 
 public class Main {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+    public static void main(String[] args) throws IOException {
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer stringTokenizer = new StringTokenizer(bufferedReader.readLine());
 
-        int N = sc.nextInt(); // 5
-        int M = sc.nextInt(); // 3
+        int suNo = Integer.parseInt(stringTokenizer.nextToken()); // 5
+        int quizNo = Integer.parseInt(stringTokenizer.nextToken()); // 3
 
+        long[] S = new long[suNo + 1];
 
+        stringTokenizer = new StringTokenizer(bufferedReader.readLine()); // 54321
 
-        // A 배열 만들어주기
-        int[] A = new int[N + 1];
-        A[0] = 0;
-        for(int i = 1; i < N + 1; i++){
-            A[i] = sc.nextInt();
+        for(int i = 1; i <= suNo; i++){
+            S[i] = S[i-1] + Integer.parseInt(stringTokenizer.nextToken());
         }
 
-        // 구간합 배열 만들기
-        int[] S = new int[N + 1];
-        S[0] = 0;
-        for(int j = 1; j < N+1; j++){
-            S[j] = S[j-1] + A[j];
-        }
+        for(int q  = 0; q < quizNo; q++){
+            stringTokenizer = new StringTokenizer(bufferedReader.readLine()); 
 
-        // 질의 갯수 저장
-        for(int i = 0; i < M; i++){
-            int a = sc.nextInt();
-            int b = sc.nextInt();
+            int i = Integer.parseInt(stringTokenizer.nextToken());
+            int j  = Integer.parseInt(stringTokenizer.nextToken());
 
-            int result = S[b] -S[a-1];
-            System.out.println(result);
+            System.out.println(S[j] - S[i-1]);
         }
     }
 }
