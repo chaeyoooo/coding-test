@@ -1,0 +1,7 @@
+-- 코드를 입력하세요
+-- DR_NAME, DR_ID, LCNS_NO, HIRE_YMD, MCDP_CD, TLNO
+-- 의사이름,  의사ID, 면허번호,  고용일자,   진료과코드, 전화번호
+SELECT DR_NAME, DR_ID, MCDP_CD ,DATE_FORMAT(HIRE_YMD,'%Y-%m-%d') as HIRE_YMD
+FROM DOCTOR
+WHERE MCDP_CD = 'CS' OR MCDP_CD = 'GS'
+ORDER BY HIRE_YMD DESC , DR_NAME ASC;
